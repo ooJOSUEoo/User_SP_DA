@@ -13,7 +13,7 @@
     <dimen name="common_padding_micro">4dp</dimen>
     <dimen name="material_card_spacing">8dp</dimen>
     <dimen name="common_padding_none">odp</dimen>
-    <dimen name="card_img_size">80dp</dimen>
+    <dimen name="card_img_size">40dp</dimen>
     <dimen name="common_padding_middle">24dp</dimen>
     <dimen name="card_baseline_topTitle">44dp</dimen>
     <dimen name="card_baseline_ratingBar">24dp</dimen>
@@ -22,4 +22,5 @@
     <dimen name="card_baseline_subtitle">36dp</dimen>
     <dimen name="card_padding_container_variant">14dp</dimen>
     <dimen name="card_padding_container_variant2">20dp</dimen>
+    <dimen name="card_heigth">56dp</dimen>
 </resources>
