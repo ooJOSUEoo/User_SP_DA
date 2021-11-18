@@ -45,8 +45,8 @@
         android:layout_width="0dp"
         android:layout_height="1dp"
         android:background="@color/color_divider"
-        app:layout_constraintStart_toStartOf="@id/tvName"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintStart_toStartOf="@id/tvName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
