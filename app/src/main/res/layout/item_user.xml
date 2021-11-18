@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="@dimen/card_heigth"
+    android:background="?attr/selectableItemBackground"
     android:clickable="true"
-    android:focusable="true"
-    android:background="?attr/selectableItemBackground">
+    android:focusable="true">
 
     <ImageView
         android:id="@+id/imgPhoto"
@@ -23,6 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/common_padding_default"
+        android:textAppearance="?attr/textAppearanceCaption"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -33,10 +34,19 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/common_padding_default"
+        android:textAppearance="?attr/textAppearanceSubtitle2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/tvOrder"
         app:layout_constraintStart_toEndOf="@id/imgPhoto"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Nombre completo" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/color_divider"
+        app:layout_constraintStart_toStartOf="@id/tvName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
