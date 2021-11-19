@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity(), OnClickListener {
 
         val isFirstTime = preferences.getBoolean(getString(R.string.sp_first_time),true)
         Log.i("SP","${getString(R.string.sp_first_time)} = $isFirstTime")
-        Log.i("SP","${getString(R.string.sp_username)} = ${preferences.getString(getString(R.string.sp_username),"NA")}")
 
         if(isFirstTime) {
             val dialogView = layoutInflater.inflate(R.layout.dialog_register,null)
@@ -44,8 +43,12 @@ class MainActivity : AppCompatActivity(), OnClickListener {
                         putString(R.string.sp_username, username)
                             .apply()
                     }
+                    Toast.makeText(this,R.string.register_success,Toast.LENGTH_SHORT).show()
                 })
                 .show()
+        }else{
+            val username = preferences.getString(getString(R.string.sp_username),getString(R.string.hint_username))
+            Toast.makeText(this,"Bienvenido $username",Toast.LENGTH_SHORT).show()
         }
 
         userAdapter = UserAdapter(getUsers(), this)
